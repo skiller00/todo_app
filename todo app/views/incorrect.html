@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Login</title>
+        <style>
+            body{
+                background: rgb(15, 187, 255);
+            }
+
+            .login-form {
+                width: 300px;
+                color: white;
+                position: absolute;
+                top:50%;
+                left: 50%;
+                padding: 20px;
+                transform: translate(-50%,-50%);
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .login-form h1 {
+                text-align: center;
+                color: #4d4d4d;
+                font-size: 24px;
+                padding: 20px 0 20px 0;
+            }
+            .login-form h2{
+                text-align: center;
+                color: #f75353;
+                font-size: 24px;
+                padding: 20px 0 20px 0;
+            }
+            .login-form input[type="password"],
+            .login-form input[type="text"] {
+                width: 100%;
+                padding: 15px;
+                border: 1px solid #dddddd;
+                margin-bottom: 15px;
+                box-sizing:border-box;
+            }
+            .login-form button[id="loginBtn"] {
+                width: 100%;
+                padding: 15px;
+                background-color: #535b63;
+                border: 0;
+                box-sizing: border-box;
+                cursor: pointer;
+                font-weight: bold;
+                color: #ffffff;
+            }
+        </style>
+	</head>
+	<body>
+		<div class="login-form">
+			<h1>TODO APP</h1>
+            <h2>INCORRECT USERNAME OR PASSWORD</h2>
+			<form action="auth" method="POST">
+				<input type="text" name="username" placeholder="Username" required>
+				<input type="password" name="password" placeholder="Password" required>
+				<button id="loginBtn">LOGIN</button>
+			</form>
+		</div>
+	</body>
+</html>
